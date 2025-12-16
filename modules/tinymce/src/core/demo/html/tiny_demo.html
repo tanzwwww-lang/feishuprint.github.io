@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tinymce Demo Page</title>
+    <style>
+      html, body, #ephox-ui { height: 100%; }
+      body { margin: 0; }
+      .tox-toolbar button,
+      .tox-toolbar .tox-tbtn {
+        max-width: none !important;
+        width: auto !important;
+        white-space: nowrap !important;
+      }
+      .tox-toolbar button[aria-label="选择数据表"],
+      .tox-toolbar button[aria-label="选择视图"],
+      .tox-toolbar button[aria-label="选择字段"] {
+        flex: 0 0 auto !important;
+        min-width: auto !important;
+      }
+    </style>
+  </head>
+  <body style="margin:0; height:100%">
+    <div id="ephox-ui" style="height:100%"></div>
+    <script src="../../../../js/tinymce/tinymce.js"></script>
+    <script src="../../../../scratch/demos/core/demo.js"></script>
+    <script>demos.TinyMceDemo();</script>
+  </body>
+</html>
